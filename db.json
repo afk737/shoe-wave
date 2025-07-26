@@ -1,0 +1,995 @@
+{
+  "Products": [
+    {
+      "id": "1",
+      "name": "Air Max 90",
+      "brand": "NIKE",
+      "gender": "MEN",
+      "category": "RUNNING",
+      "price": 120,
+      "is_in_inventory": true,
+      "items_left": 10,
+      "image": "/images/product 1.jpeg",
+      "slug": "nike-air-max-90",
+      "featured": 1,
+      "description": "The Air Max 90 features a sleek, low-profile silhouette with a distinctive combination of materials, including premium leather, synthetic leather, suede, or breathable mesh/textile on the upper, depending on the model."
+    },
+    {
+      "id": "2",
+      "name": "Ultraboost 5",
+      "brand": "ADIDAS",
+      "gender": "MEN",
+      "category": "RUNNING",
+      "price": 180,
+      "is_in_inventory": true,
+      "items_left": 8,
+      "image": "/images/product 2.jpeg",
+      "slug": "adidas-ultraboost-5",
+      "featured": 0,
+      "description": "The Adidas Ultraboost 5, launched in 2024, is a premium running and lifestyle sneaker that refines the iconic Ultraboost line with enhanced cushioning, reduced weight, and a versatile design."
+    },
+    {
+      "id": "3",
+      "name": "Gel-Kayano 30",
+      "brand": "ASICS",
+      "gender": "WOMEN",
+      "category": "RUNNING",
+      "price": 160,
+      "is_in_inventory": true,
+      "items_left": 5,
+      "image": "/images/product 3.jpeg",
+      "slug": "asics-gel-kayano-30",
+      "featured": 1,
+      "description": "The ASICS Gel-Kayano 30, released on July 1, 2023, marks the 30th anniversary of ASICS’ flagship stability running shoe, originally introduced in 1993. Completely redesigned, it blends advanced technology with plush cushioning, making it ideal for long-distance runners, overpronators, and those seeking a supportive, comfortable daily trainer for running or all-day wear."
+    },
+    {
+      "id": "4",
+      "name": "Classic Leather",
+      "brand": "REEBOK",
+      "gender": "UNISEX",
+      "category": "CASUAL",
+      "price": 75,
+      "is_in_inventory": true,
+      "items_left": 12,
+      "image": "/images/classic leather.jpg",
+      "slug": "reebok-classic-leather",
+      "featured": 0,
+      "description": "The Reebok Classic Leather, first introduced in 1983, is a timeless sneaker that blends retro style with modern comfort, originally designed as a running shoe but now a staple in casual and athleisure wardrobes."
+    },
+    {
+      "id": "5",
+      "name": "Chuck Taylor All Star",
+      "brand": "CONVERSE",
+      "gender": "UNISEX",
+      "category": "CASUAL",
+      "price": 60,
+      "is_in_inventory": true,
+      "items_left": 15,
+      "image": "/images/product 5.jpeg",
+      "slug": "converse-chuck-taylor",
+      "featured": 1,
+      "description": "The Converse Chuck Taylor All Star, originally designed as a basketball shoe in 1917, has evolved into a cultural icon known for its simple canvas upper, rubber toe cap, and distinctive high-top or low-top silhouette, making it a versatile choice for casual wear."
+    },
+    {
+      "id": "6",
+      "name": "Delsie Stella",
+      "brand": "CLARKS",
+      "gender": "WOMEN",
+      "category": "FORMAL",
+      "price": 139.95,
+      "is_in_inventory": true,
+      "items_left": 7,
+      "image": "/images/product 6.jpeg",
+      "slug": "clarks-delsie-stella",
+      "featured": 0,
+      "description": "The Clarks Delsie Stella, part of the Clarks Artisan collection, is a stylish and comfortable women’s ankle bootie designed for versatility, blending modern elegance with all-day wearability. Introduced as a fashionable yet practical option, it’s ideal for professional settings, casual outings, or evening wear, offering a balance of height, stability, and cushioning."
+    },
+    {
+      "id": "7",
+      "name": "Edell",
+      "brand": "BANDOLINO",
+      "gender": "WOMEN",
+      "category": "FORMAL",
+      "price": 58.95,
+      "is_in_inventory": true,
+      "items_left": 9,
+      "image": "/images/product  7.jpeg",
+      "slug": "bandolino-edell",
+      "featured": 0
+    },
+    {
+      "id": "8",
+      "name": "Haven",
+      "brand": "AEROSOLES",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 57.99,
+      "is_in_inventory": true,
+      "items_left": 6,
+      "image": "/images/product 8.jpeg",
+      "slug": "aerosoles-haven",
+      "featured": 0,
+      "description": "The Aerosoles Haven is a women’s casual shoe designed for comfort and style, featuring a versatile design that can be dressed up or down, making it suitable for various occasions. Known for its cushioned insole and flexible outsole, it provides all-day comfort while maintaining a chic appearance."
+    },
+    {
+      "id": "9",
+      "name": "Jessica Bohemia Slide",
+      "brand": "FRYE",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 183.99,
+      "is_in_inventory": true,
+      "items_left": 4,
+      "image": "/images/product 9.jpeg",
+      "slug": "frye-jessica-bohemia-slide",
+      "featured": 1,
+      "description": "The Frye Jessica Bohemia Slide is a stylish and comfortable women’s slide sandal, known for its premium leather construction and bohemian-inspired design. It features a cushioned footbed for all-day comfort and a versatile look that pairs well with casual and dressy outfits alike."
+    },
+    {
+      "id": "10",
+      "name": "Estee",
+      "brand": "TROTTERS",
+      "gender": "WOMEN",
+      "category": "FORMAL",
+      "price": 129.95,
+      "is_in_inventory": true,
+      "items_left": 5,
+      "image": "/images/product 10.jpeg",
+      "slug": "trotters-estee",
+      "featured": 0,
+      "description": "The Trotters Estee is a women’s formal shoe designed for elegance and comfort, featuring a sleek silhouette and high-quality materials. It’s ideal for professional settings or special occasions, offering a blend of style and support with its cushioned insole and classic design."
+    },
+    {
+      "id": "11",
+      "name": "Simone",
+      "brand": "WANTED",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 39.95,
+      "is_in_inventory": true,
+      "items_left": 10,
+      "image": "/images/product 11.jpeg",
+      "slug": "wanted-simone",
+      "featured": 0,
+      "description": "The Wanted Simone is a women’s casual shoe known for its trendy design and affordability, making it a popular choice for everyday wear. It combines style with comfort, featuring a cushioned insole and versatile look that can be paired with various outfits."
+    },
+    {
+      "id": "12",
+      "name": "Joyride Dual Run",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "RUNNING",
+      "price": 110,
+      "is_in_inventory": false,
+      "items_left": 3,
+      "image": "/images/product 12.jpeg",
+      "slug": "nike-joyride-dual-run",
+      "featured": 0
+    },
+    {
+      "id": "13",
+      "name": "Renew Run",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "RUNNING",
+      "price": 80,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "image": "/images/product 12.jpeg",
+      "slug": "nike-renew-run",
+      "featured": 0,
+      "description": "The Nike Renew Run is a kids' running shoe designed for comfort and support, featuring a lightweight mesh upper, cushioned midsole, and durable outsole. It provides a secure fit and responsive cushioning, making it ideal for active children who need reliable footwear for running and play."
+    },
+    {
+      "id": "14",
+      "name": "Bridgport Advice",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 30,
+      "is_in_inventory": true,
+      "items_left": 4,
+      "image": "/images/product 14.jpeg",
+      "slug": "bridgport-advice",
+      "featured": 1,
+      "description": "The Hush Puppies Bridgport Advice is a men’s formal shoe known for its classic design and comfort, featuring premium leather construction and a cushioned insole. It’s ideal for professional settings or formal occasions, offering a blend of style and support with its sleek silhouette."
+    },
+    {
+      "id": "15",
+      "name": "Beck",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 80,
+      "is_in_inventory": true,
+      "items_left": 5,
+      "image": "/images/product 15.jpeg",
+      "slug": "hushpuppies-beck",
+      "featured": 0,
+      "description": "The Hush Puppies Beck is a men’s formal shoe designed for comfort and style, featuring a classic silhouette with premium leather construction. It’s ideal for professional settings or formal occasions, offering a cushioned insole and durable outsole for all-day wear."
+    },
+    {
+      "id": "16",
+      "name": "Yeezy Boost 350",
+      "brand": "ADIDAS",
+      "gender": "UNISEX",
+      "category": "LIFESTYLE",
+      "price": 220,
+      "is_in_inventory": true,
+      "items_left": 6,
+      "image": "/images/product 16.jpeg",
+      "slug": "adidas-yeezy-boost-350",
+      "featured": 1,
+      "description": "The Adidas Yeezy Boost 350, designed by Kanye West, is a highly sought-after lifestyle sneaker known for its sleek silhouette, Primeknit upper, and Boost cushioning technology. It combines fashion-forward design with comfort, making it a staple in streetwear culture."
+    }
+  ],
+  "users": [
+    {
+      "id": "59f7",
+      "name": "afk",
+      "email": "1234@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "45c2",
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "44d8",
+      "name": "first",
+      "email": "first@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "90d2",
+      "name": "login ",
+      "email": "login@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "da5a",
+      "name": "new",
+      "email": "new@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "81e1",
+      "name": "car",
+      "email": "car@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "263f",
+      "name": "new",
+      "email": "new1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "8386",
+      "name": "join",
+      "email": "join@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "1777",
+      "name": "key",
+      "email": "key@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "b100",
+      "name": "Affan",
+      "email": "afk@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "bc50",
+      "name": "trying ",
+      "email": "trying@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "8d07",
+      "name": "newone",
+      "email": "one123@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "c7df",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "4b99",
+      "name": "affu",
+      "email": "just@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "9bb4",
+      "name": "affu",
+      "email": "111@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "5580",
+      "name": "newuser",
+      "email": "newuser@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "c64a",
+      "name": "local",
+      "email": "local@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "59c8",
+      "name": "ok",
+      "email": "ok@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "4e53",
+      "name": "nishad",
+      "email": "nish@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "456f",
+      "name": "mohammed",
+      "email": "tester@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "34c4",
+      "name": "hello",
+      "email": "hello@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "8c7d",
+      "name": "hello1",
+      "email": "hello1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "5553",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "2",
+          "name": "Ultraboost 5",
+          "brand": "ADIDAS",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 180,
+          "is_in_inventory": true,
+          "items_left": 8,
+          "image": "/images/product 2.jpeg",
+          "slug": "adidas-ultraboost-5",
+          "featured": 0,
+          "description": "The Adidas Ultraboost 5, launched in 2024, is a premium running and lifestyle sneaker that refines the iconic Ultraboost line with enhanced cushioning, reduced weight, and a versatile design.",
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "name": "Haven",
+          "brand": "AEROSOLES",
+          "gender": "WOMEN",
+          "category": "CASUAL",
+          "price": 57.99,
+          "is_in_inventory": true,
+          "items_left": 6,
+          "image": "/images/product 8.jpeg",
+          "slug": "aerosoles-haven",
+          "featured": 0,
+          "description": "The Aerosoles Haven is a women’s casual shoe designed for comfort and style, featuring a versatile design that can be dressed up or down, making it suitable for various occasions. Known for its cushioned insole and flexible outsole, it provides all-day comfort while maintaining a chic appearance.",
+          "quantity": 1
+        },
+        {
+          "id": "15",
+          "name": "Beck",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 15.jpeg",
+          "slug": "hushpuppies-beck",
+          "featured": 0,
+          "description": "The Hush Puppies Beck is a men’s formal shoe designed for comfort and style, featuring a classic silhouette with premium leather construction. It’s ideal for professional settings or formal occasions, offering a cushioned insole and durable outsole for all-day wear.",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "image": "/images/product 14.jpeg",
+          "slug": "bridgport-advice",
+          "featured": 1,
+          "description": "The Hush Puppies Bridgport Advice is a men’s formal shoe known for its classic design and comfort, featuring premium leather construction and a cushioned insole. It’s ideal for professional settings or formal occasions, offering a blend of style and support with its sleek silhouette.",
+          "quantity": 1
+        },
+        {
+          "id": "13",
+          "name": "Renew Run",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "RUNNING",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "image": "/images/product 12.jpeg",
+          "slug": "nike-renew-run",
+          "featured": 0,
+          "description": "The Nike Renew Run is a kids' running shoe designed for comfort and support, featuring a lightweight mesh upper, cushioned midsole, and durable outsole. It provides a secure fit and responsive cushioning, making it ideal for active children who need reliable footwear for running and play.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 427.99,
+      "date": "7/22/2025, 8:58:36 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "9a5d",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "2",
+          "name": "Ultraboost 5",
+          "brand": "ADIDAS",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 180,
+          "is_in_inventory": true,
+          "items_left": 8,
+          "image": "/images/product 2.jpeg",
+          "slug": "adidas-ultraboost-5",
+          "featured": 0,
+          "description": "The Adidas Ultraboost 5, launched in 2024, is a premium running and lifestyle sneaker that refines the iconic Ultraboost line with enhanced cushioning, reduced weight, and a versatile design.",
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "name": "Haven",
+          "brand": "AEROSOLES",
+          "gender": "WOMEN",
+          "category": "CASUAL",
+          "price": 57.99,
+          "is_in_inventory": true,
+          "items_left": 6,
+          "image": "/images/product 8.jpeg",
+          "slug": "aerosoles-haven",
+          "featured": 0,
+          "description": "The Aerosoles Haven is a women’s casual shoe designed for comfort and style, featuring a versatile design that can be dressed up or down, making it suitable for various occasions. Known for its cushioned insole and flexible outsole, it provides all-day comfort while maintaining a chic appearance.",
+          "quantity": 1
+        },
+        {
+          "id": "15",
+          "name": "Beck",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 15.jpeg",
+          "slug": "hushpuppies-beck",
+          "featured": 0,
+          "description": "The Hush Puppies Beck is a men’s formal shoe designed for comfort and style, featuring a classic silhouette with premium leather construction. It’s ideal for professional settings or formal occasions, offering a cushioned insole and durable outsole for all-day wear.",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "image": "/images/product 14.jpeg",
+          "slug": "bridgport-advice",
+          "featured": 1,
+          "description": "The Hush Puppies Bridgport Advice is a men’s formal shoe known for its classic design and comfort, featuring premium leather construction and a cushioned insole. It’s ideal for professional settings or formal occasions, offering a blend of style and support with its sleek silhouette.",
+          "quantity": 1
+        },
+        {
+          "id": "13",
+          "name": "Renew Run",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "RUNNING",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "image": "/images/product 12.jpeg",
+          "slug": "nike-renew-run",
+          "featured": 0,
+          "description": "The Nike Renew Run is a kids' running shoe designed for comfort and support, featuring a lightweight mesh upper, cushioned midsole, and durable outsole. It provides a secure fit and responsive cushioning, making it ideal for active children who need reliable footwear for running and play.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 427.99,
+      "date": "7/22/2025, 8:58:40 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "9d93",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "2",
+          "name": "Ultraboost 5",
+          "brand": "ADIDAS",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 180,
+          "is_in_inventory": true,
+          "items_left": 8,
+          "image": "/images/product 2.jpeg",
+          "slug": "adidas-ultraboost-5",
+          "featured": 0,
+          "description": "The Adidas Ultraboost 5, launched in 2024, is a premium running and lifestyle sneaker that refines the iconic Ultraboost line with enhanced cushioning, reduced weight, and a versatile design.",
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "name": "Haven",
+          "brand": "AEROSOLES",
+          "gender": "WOMEN",
+          "category": "CASUAL",
+          "price": 57.99,
+          "is_in_inventory": true,
+          "items_left": 6,
+          "image": "/images/product 8.jpeg",
+          "slug": "aerosoles-haven",
+          "featured": 0,
+          "description": "The Aerosoles Haven is a women’s casual shoe designed for comfort and style, featuring a versatile design that can be dressed up or down, making it suitable for various occasions. Known for its cushioned insole and flexible outsole, it provides all-day comfort while maintaining a chic appearance.",
+          "quantity": 1
+        },
+        {
+          "id": "15",
+          "name": "Beck",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 15.jpeg",
+          "slug": "hushpuppies-beck",
+          "featured": 0,
+          "description": "The Hush Puppies Beck is a men’s formal shoe designed for comfort and style, featuring a classic silhouette with premium leather construction. It’s ideal for professional settings or formal occasions, offering a cushioned insole and durable outsole for all-day wear.",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "image": "/images/product 14.jpeg",
+          "slug": "bridgport-advice",
+          "featured": 1,
+          "description": "The Hush Puppies Bridgport Advice is a men’s formal shoe known for its classic design and comfort, featuring premium leather construction and a cushioned insole. It’s ideal for professional settings or formal occasions, offering a blend of style and support with its sleek silhouette.",
+          "quantity": 1
+        },
+        {
+          "id": "13",
+          "name": "Renew Run",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "RUNNING",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "image": "/images/product 12.jpeg",
+          "slug": "nike-renew-run",
+          "featured": 0,
+          "description": "The Nike Renew Run is a kids' running shoe designed for comfort and support, featuring a lightweight mesh upper, cushioned midsole, and durable outsole. It provides a secure fit and responsive cushioning, making it ideal for active children who need reliable footwear for running and play.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 427.99,
+      "date": "7/22/2025, 9:00:17 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "fdab",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "2",
+          "name": "Ultraboost 5",
+          "brand": "ADIDAS",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 180,
+          "is_in_inventory": true,
+          "items_left": 8,
+          "image": "/images/product 2.jpeg",
+          "slug": "adidas-ultraboost-5",
+          "featured": 0,
+          "description": "The Adidas Ultraboost 5, launched in 2024, is a premium running and lifestyle sneaker that refines the iconic Ultraboost line with enhanced cushioning, reduced weight, and a versatile design.",
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "name": "Haven",
+          "brand": "AEROSOLES",
+          "gender": "WOMEN",
+          "category": "CASUAL",
+          "price": 57.99,
+          "is_in_inventory": true,
+          "items_left": 6,
+          "image": "/images/product 8.jpeg",
+          "slug": "aerosoles-haven",
+          "featured": 0,
+          "description": "The Aerosoles Haven is a women’s casual shoe designed for comfort and style, featuring a versatile design that can be dressed up or down, making it suitable for various occasions. Known for its cushioned insole and flexible outsole, it provides all-day comfort while maintaining a chic appearance.",
+          "quantity": 1
+        },
+        {
+          "id": "15",
+          "name": "Beck",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 15.jpeg",
+          "slug": "hushpuppies-beck",
+          "featured": 0,
+          "description": "The Hush Puppies Beck is a men’s formal shoe designed for comfort and style, featuring a classic silhouette with premium leather construction. It’s ideal for professional settings or formal occasions, offering a cushioned insole and durable outsole for all-day wear.",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "image": "/images/product 14.jpeg",
+          "slug": "bridgport-advice",
+          "featured": 1,
+          "description": "The Hush Puppies Bridgport Advice is a men’s formal shoe known for its classic design and comfort, featuring premium leather construction and a cushioned insole. It’s ideal for professional settings or formal occasions, offering a blend of style and support with its sleek silhouette.",
+          "quantity": 1
+        },
+        {
+          "id": "13",
+          "name": "Renew Run",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "RUNNING",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "image": "/images/product 12.jpeg",
+          "slug": "nike-renew-run",
+          "featured": 0,
+          "description": "The Nike Renew Run is a kids' running shoe designed for comfort and support, featuring a lightweight mesh upper, cushioned midsole, and durable outsole. It provides a secure fit and responsive cushioning, making it ideal for active children who need reliable footwear for running and play.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 427.99,
+      "date": "7/22/2025, 9:00:32 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "88e9",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "3",
+          "name": "Gel-Kayano 30",
+          "brand": "ASICS",
+          "gender": "WOMEN",
+          "category": "RUNNING",
+          "price": 160,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 3.jpeg",
+          "slug": "asics-gel-kayano-30",
+          "featured": 1,
+          "description": "The ASICS Gel-Kayano 30, released on July 1, 2023, marks the 30th anniversary of ASICS’ flagship stability running shoe, originally introduced in 1993. Completely redesigned, it blends advanced technology with plush cushioning, making it ideal for long-distance runners, overpronators, and those seeking a supportive, comfortable daily trainer for running or all-day wear.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 160,
+      "date": "7/22/2025, 9:08:30 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "a06d",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "3",
+          "name": "Gel-Kayano 30",
+          "brand": "ASICS",
+          "gender": "WOMEN",
+          "category": "RUNNING",
+          "price": 160,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 3.jpeg",
+          "slug": "asics-gel-kayano-30",
+          "featured": 1,
+          "description": "The ASICS Gel-Kayano 30, released on July 1, 2023, marks the 30th anniversary of ASICS’ flagship stability running shoe, originally introduced in 1993. Completely redesigned, it blends advanced technology with plush cushioning, making it ideal for long-distance runners, overpronators, and those seeking a supportive, comfortable daily trainer for running or all-day wear.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 160,
+      "date": "7/22/2025, 9:08:36 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "35c1",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "3",
+          "name": "Gel-Kayano 30",
+          "brand": "ASICS",
+          "gender": "WOMEN",
+          "category": "RUNNING",
+          "price": 160,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 3.jpeg",
+          "slug": "asics-gel-kayano-30",
+          "featured": 1,
+          "description": "The ASICS Gel-Kayano 30, released on July 1, 2023, marks the 30th anniversary of ASICS’ flagship stability running shoe, originally introduced in 1993. Completely redesigned, it blends advanced technology with plush cushioning, making it ideal for long-distance runners, overpronators, and those seeking a supportive, comfortable daily trainer for running or all-day wear.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 160,
+      "date": "7/22/2025, 9:12:14 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "4579",
+      "userEmail": "hello1@gmail.com",
+      "items": [
+        {
+          "id": "3",
+          "name": "Gel-Kayano 30",
+          "brand": "ASICS",
+          "gender": "WOMEN",
+          "category": "RUNNING",
+          "price": 160,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 3.jpeg",
+          "slug": "asics-gel-kayano-30",
+          "featured": 1,
+          "description": "The ASICS Gel-Kayano 30, released on July 1, 2023, marks the 30th anniversary of ASICS’ flagship stability running shoe, originally introduced in 1993. Completely redesigned, it blends advanced technology with plush cushioning, making it ideal for long-distance runners, overpronators, and those seeking a supportive, comfortable daily trainer for running or all-day wear.",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 160,
+      "date": "7/22/2025, 9:12:19 PM",
+      "address": {
+        "name": "nishad",
+        "street": "xvsxb",
+        "city": "malappuram",
+        "pincode": "673606",
+        "phone": "0123456789"
+      }
+    },
+    {
+      "id": "1753206334289",
+      "name": "email",
+      "email": "email@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "1753206492467",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "1753206661081",
+      "name": "tester",
+      "email": "tester123@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "1753206759085",
+      "name": "account",
+      "email": "account@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "1753207008715",
+      "name": "auto",
+      "email": "auto1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "1753207191861",
+      "name": "tailwind",
+      "email": "tailwind@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "69d0",
+      "name": "mohammed affan",
+      "email": "affuafk123@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "fe9c",
+      "name": "vishnu",
+      "email": "vishnu321@gmail.com",
+      "password": "999521"
+    },
+    {
+      "id": "a1d6",
+      "name": "joinee",
+      "email": "joinee@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "80ba",
+      "name": "mohammed affan",
+      "email": "affuafk321@gmail.com",
+      "password": "994730"
+    },
+    {
+      "id": "e61c",
+      "name": "hello",
+      "email": "newone@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "0d3b",
+      "name": "afk",
+      "email": "afk123@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f31b",
+      "name": "trial",
+      "email": "trial@gmail.com",
+      "password": "654321"
+    },
+    {
+      "id": "1753253054456",
+      "name": "new1user",
+      "email": "new1user@gmail.com",
+      "password": "994730"
+    },
+    {
+      "id": "1753255159779",
+      "name": "Affan",
+      "email": "review@gmail.com",
+      "password": "updated"
+    },
+    {
+      "id": "1753435979936",
+      "name": "AffanWEEK2",
+      "email": "week2@gmail.com",
+      "password": "updated"
+    },
+    {
+      "id": "1753512986056",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "updated",
+      "role": "admin"
+    }
+  ],
+  "orders": [
+    {
+      "id": "4e88",
+      "userId": 1753512986056,
+      "items": [
+        {
+          "id": "3",
+          "name": "Gel-Kayano 30",
+          "brand": "ASICS",
+          "gender": "WOMEN",
+          "category": "RUNNING",
+          "price": 160,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 3.jpeg",
+          "slug": "asics-gel-kayano-30",
+          "featured": 1,
+          "description": "The ASICS Gel-Kayano 30, released on July 1, 2023, marks the 30th anniversary of ASICS’ flagship stability running shoe, originally introduced in 1993. Completely redesigned, it blends advanced technology with plush cushioning, making it ideal for long-distance runners, overpronators, and those seeking a supportive, comfortable daily trainer for running or all-day wear.",
+          "quantity": 1
+        }
+      ],
+      "total": 160,
+      "address": "qwee",
+      "status": "Pending",
+      "date": "7/26/2025, 12:39:37 PM"
+    },
+    {
+      "id": "aae4",
+      "userId": 1753512986056,
+      "items": [
+        {
+          "id": "15",
+          "name": "Beck",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 80,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "image": "/images/product 15.jpeg",
+          "slug": "hushpuppies-beck",
+          "featured": 0,
+          "description": "The Hush Puppies Beck is a men’s formal shoe designed for comfort and style, featuring a classic silhouette with premium leather construction. It’s ideal for professional settings or formal occasions, offering a cushioned insole and durable outsole for all-day wear.",
+          "quantity": 1
+        }
+      ],
+      "total": 80,
+      "address": "aedaw",
+      "status": "Pending",
+      "date": "7/26/2025, 12:39:49 PM"
+    }
+  ]
+}
