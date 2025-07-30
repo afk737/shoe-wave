@@ -12,10 +12,10 @@ import Register from "./components/Register";
 import Wishlist from "./components/Wishlist";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
+import OrderSuccessPage from "./Pages/OrderSuccessPage";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import ProductDetails from "./components/ProductDetails";
-import OrderSuccess from "./Pages/OrderSuccess";
 import UserOrders from "./Pages/Order";
 import UserProfile from "./Pages/UserProfile";
 
@@ -100,7 +100,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/order-success" element={<OrderSuccess />} />
+            <Route path="/order-success" element={<OrderSuccessPage />} />
             <Route path="/order" element={<UserOrders />} />
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="*" element={<ErrorPage />} />

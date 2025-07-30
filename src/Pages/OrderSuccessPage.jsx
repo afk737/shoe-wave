@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const OrderSuccess = () => {
+const OrderSuccessPage = () => {
   const [orderId, setOrderId] = useState(null);
   const [countdown, setCountdown] = useState(5);
   const [showConfetti, setShowConfetti] = useState(false);
@@ -344,4 +344,4 @@ const OrderSuccess = () => {
   );
 };
 
-export default OrderSuccess;
+export default OrderSuccessPage;
