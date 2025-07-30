@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        {/* Heading */}
+   
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">
           About <span className="text-blue-600">shoeWave</span>
         </h1>
 
-        {/* Tagline */}
+     
         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
           Welcome to <span className="font-bold">shoeWave</span>, your ultimate
           destination for stylish, comfortable, and affordable footwear. Our
@@ -17,9 +17,8 @@ const About = () => {
           one place.
         </p>
 
-        {/* Grid Content */}
         <div className="grid md:grid-cols-2 gap-10 mt-12">
-          {/* Left Image */}
+       
           <div>
             <img
               src="/images/3.png"
@@ -28,7 +27,7 @@ const About = () => {
             />
           </div>
 
-          {/* Right Text */}
+      
           <div className="flex flex-col justify-center text-left">
             <h2 className="text-3xl font-semibold mb-4 text-gray-800">
               Why Choose Us?
@@ -48,7 +47,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+     
         <div className="mt-12 bg-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold mb-3 text-gray-800">
             Our Mission

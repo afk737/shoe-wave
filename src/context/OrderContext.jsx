@@ -16,7 +16,6 @@ export const OrderProvider = ({ children }) => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Fetch user's orders
   const fetchUserOrders = async () => {
     if (!user) {
       throw new Error('User must be logged in to fetch orders');
@@ -24,8 +23,7 @@ export const OrderProvider = ({ children }) => {
 
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/orders?userId=${user.id}`);
-      
+      const response = await fetch(`http://localhost:5000/orders?userId=${String(user.id)}`);
       if (!response.ok) {
         throw new Error('Failed to fetch orders');
       }
@@ -33,7 +31,7 @@ export const OrderProvider = ({ children }) => {
       const userOrders = await response.json();
       setOrders(userOrders);
       return userOrders;
-      
+
     } catch (error) {
       console.error('Error fetching orders:', error);
       throw error;
@@ -41,7 +39,6 @@ export const OrderProvider = ({ children }) => {
       setLoading(false);
     }
   };
-
 
   const createOrder = async (orderData) => {
     if (!user) {
@@ -51,7 +48,7 @@ export const OrderProvider = ({ children }) => {
     try {
       const newOrder = {
         ...orderData,
-        userId: user.id,
+        userId: String(user.id), 
         userEmail: user.email,
         userName: user.name,
         id: Date.now(),
@@ -72,18 +69,15 @@ export const OrderProvider = ({ children }) => {
       }
 
       const createdOrder = await response.json();
-      
- 
       setOrders(prev => [createdOrder, ...prev]);
       
       return { success: true, order: createdOrder };
-      
+
     } catch (error) {
       console.error('Error creating order:', error);
       return { success: false, message: error.message };
     }
   };
-
 
   const updateOrderStatus = async (orderId, newStatus) => {
     try {
@@ -100,70 +94,61 @@ export const OrderProvider = ({ children }) => {
       }
 
       const updatedOrder = await response.json();
-      
-   
+
       setOrders(prev => 
         prev.map(order => 
           order.id === orderId ? { ...order, status: newStatus } : order
         )
       );
-      
+
       return { success: true, order: updatedOrder };
-      
+
     } catch (error) {
       console.error('Error updating order status:', error);
       return { success: false, message: error.message };
     }
   };
 
-
   const cancelOrder = async (orderId) => {
     return updateOrderStatus(orderId, 'cancelled');
   };
 
-
   const getOrderById = async (orderId) => {
     try {
       const response = await fetch(`http://localhost:5000/orders/${orderId}`);
-      
       if (!response.ok) {
         throw new Error('Order not found');
       }
 
       const order = await response.json();
-      
-  
-      if (order.userId !== user?.id) {
+
+      if (String(order.userId) !== String(user?.id)) {
         throw new Error('Access denied: This order does not belong to you');
       }
-      
+
       return { success: true, order };
-      
+
     } catch (error) {
       console.error('Error fetching order:', error);
       return { success: false, message: error.message };
     }
   };
 
- 
   const reorder = async (orderId) => {
     try {
       const { success, order, message } = await getOrderById(orderId);
-      
       if (!success) {
         return { success: false, message };
       }
 
-   
       const reorderData = {
         items: order.items,
         total: order.total,
         shippingAddress: order.shippingAddress,
-      
       };
 
       return await createOrder(reorderData);
-      
+
     } catch (error) {
       console.error('Error reordering:', error);
       return { success: false, message: error.message };

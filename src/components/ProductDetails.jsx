@@ -6,13 +6,13 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetails = () => {
-  const { id } = useParams(); // ✅ Get product ID from URL
+  const { id } = useParams(); 
   const [product, setProduct] = useState(null);
   const { addToCart } = useCart();
   const { addToWishlist } = useWishlist();
 
   useEffect(() => {
-    // ✅ Fetch product details from JSON Server
+  
     const fetchProduct = async () => {
       try {
         const res = await fetch(`http://localhost:5000/Products/${id}`);

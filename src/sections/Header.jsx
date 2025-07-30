@@ -22,7 +22,7 @@ const Header = () => {
     <header className="bg-white/30 backdrop-blur-xl shadow-xl sticky top-0 z-50 border-b border-white/20 transition-all duration-500 animate-fadeDown">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+      
           <Link
             to="/"
             className="text-3xl font-extrabold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text hover:scale-110 transition-transform duration-300"
@@ -30,7 +30,7 @@ const Header = () => {
             shoeWave
           </Link>
 
-          {/* Navigation */}
+         
           <nav className="hidden md:flex space-x-8">
             {['Home', 'Products', 'About', 'order'].map((item) => (
               <Link
@@ -44,9 +44,9 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Icons and Auth */}
+         
           <div className="flex items-center space-x-6">
-            {/* Wishlist Icon */}
+           
             <Link
               to="/wishlist"
               className="relative group p-2 rounded-full hover:bg-red-100/40 transition-all duration-300"
@@ -59,7 +59,7 @@ const Header = () => {
               )}
             </Link>
 
-            {/* Cart Icon */}
+        
             <Link
               to="/cart"
               className="relative group p-2 rounded-full hover:bg-blue-100/40 transition-all duration-300"
@@ -72,7 +72,7 @@ const Header = () => {
               )}
             </Link>
 
-            {/* Auth Buttons */}
+           
             {user ? (
               <div className="relative">
                 <button
@@ -82,18 +82,32 @@ const Header = () => {
                   Hi, <span className="font-bold text-blue-700">{user.name}</span>
                 </button>
 
-                {/* Dropdown Menu */}
+           
                 {dropdownOpen && (
-                  <div className="absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-lg animate-fadeIn z-50">
+                  <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg animate-fadeIn z-50">
                     <button
                       onClick={() => {
                         setDropdownOpen(false);
-                        navigate('/UserProfile');
+                        navigate('/user-profile');
                       }}
                       className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 transition"
                     >
                       Profile
                     </button>
+
+                  
+                    {user.role === 'admin' && (
+                      <button
+                        onClick={() => {
+                          setDropdownOpen(false);
+                          navigate('/admin');
+                        }}
+                        className="block w-full text-left px-4 py-2 text-purple-700 font-semibold hover:bg-purple-50 transition"
+                      >
+                        Admin Panel
+                      </button>
+                    )}
+
                     <button
                       onClick={handleLogout}
                       className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 transition"

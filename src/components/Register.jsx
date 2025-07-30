@@ -6,7 +6,7 @@ const Register = () => {
   const navigate = useNavigate();
   const { register } = useAuth();
   
-  // Form state
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +18,7 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  // Handle input changes
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -27,7 +27,7 @@ const Register = () => {
     }));
   };
 
-  // Validate form
+
   const validateForm = () => {
     if (!formData.name.trim()) {
       setError('Full name is required');
@@ -57,12 +57,11 @@ const Register = () => {
     return true;
   };
 
-  // Handle form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     
-    // Validate form
     if (!validateForm()) {
       return;
     }
@@ -76,7 +75,7 @@ const Register = () => {
         setSuccess(true);
         setError('');
         
-        // Show success message and redirect after 2 seconds
+        
         setTimeout(() => {
           navigate("/login", { 
             state: { 
@@ -114,7 +113,7 @@ const Register = () => {
       </p>
 
       <form onSubmit={handleSubmit}>
-        {/* Error Message */}
+   
         {error && (
           <div style={{
             backgroundColor: '#f8d7da',
@@ -128,7 +127,7 @@ const Register = () => {
           </div>
         )}
 
-        {/* Success Message */}
+      
         {success && (
           <div style={{
             backgroundColor: '#d4edda',
@@ -142,7 +141,7 @@ const Register = () => {
           </div>
         )}
 
-        {/* Full Name */}
+
         <div style={{ marginBottom: '20px' }}>
           <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
             Full Name
@@ -165,7 +164,7 @@ const Register = () => {
           />
         </div>
 
-        {/* Email */}
+       
         <div style={{ marginBottom: '20px' }}>
           <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
             Email Address
@@ -188,7 +187,7 @@ const Register = () => {
           />
         </div>
 
-        {/* Password */}
+    
         <div style={{ marginBottom: '20px' }}>
           <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
             Password
@@ -211,7 +210,7 @@ const Register = () => {
           />
         </div>
 
-        {/* Confirm Password */}
+       
         <div style={{ marginBottom: '30px' }}>
           <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
             Confirm Password
@@ -234,7 +233,7 @@ const Register = () => {
           />
         </div>
 
-        {/* Submit Button */}
+      
         <button
           type="submit"
           disabled={loading}
@@ -254,7 +253,7 @@ const Register = () => {
         </button>
       </form>
 
-      {/* Login Link */}
+   
       <p style={{ textAlign: 'center', marginTop: '20px', color: '#666' }}>
         Already have an account?{' '}
         <Link 

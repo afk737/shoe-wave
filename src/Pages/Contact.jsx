@@ -39,7 +39,7 @@ const Contact = () => {
 
         <div className="bg-white p-8 rounded-2xl shadow-lg">
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
+        
             <div>
               <label className="block text-gray-700 font-medium mb-2">
                 Full Name
@@ -55,7 +55,7 @@ const Contact = () => {
               />
             </div>
 
-            {/* Email */}
+            
             <div>
               <label className="block text-gray-700 font-medium mb-2">
                 Email Address
@@ -71,7 +71,7 @@ const Contact = () => {
               />
             </div>
 
-            {/* Message */}
+          
             <div>
               <label className="block text-gray-700 font-medium mb-2">
                 Message
@@ -87,7 +87,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            {/* Submit Button */}
+          
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition duration-300"
@@ -97,7 +97,7 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Contact Info */}
+      
         <div className="mt-12 text-center">
           <h3 className="text-xl font-bold text-gray-800 mb-4">
             Or reach us directly:
@@ -107,7 +107,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* ✅ Toast Container */}
+    
       <ToastContainer />
     </section>
   );

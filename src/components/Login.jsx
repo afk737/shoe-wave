@@ -55,11 +55,21 @@ const Login = () => {
       if (result.success) {
         const loggedUser = result.user;
 
-        // ✅ Role-based navigation
-        if (loggedUser.role && loggedUser.role === 'admin') {
-          navigate('/admin'); // Admin users
+      
+        if (loggedUser.status === 'blocked') {
+          setError('Your account has been blocked. Contact admin.');
+          setLoading(false);
+          return;
+        }
+
+     
+        localStorage.setItem('user', JSON.stringify(loggedUser));
+
+ 
+        if (loggedUser.role === 'admin') {
+          navigate('/admin'); 
         } else {
-          navigate('/'); // Normal users go to homepage
+          navigate('/products'); 
         }
       } else {
         setError(result.message || 'Login failed');
@@ -92,7 +102,6 @@ const Login = () => {
       </p>
 
       <form onSubmit={handleSubmit}>
-        {/* Registration Success Message */}
         {registrationMessage && (
           <div
             style={{
@@ -108,7 +117,6 @@ const Login = () => {
           </div>
         )}
 
-        {/* Error Message */}
         {error && (
           <div
             style={{
@@ -124,11 +132,8 @@ const Login = () => {
           </div>
         )}
 
-        {/* Email */}
         <div style={{ marginBottom: '20px' }}>
-          <label
-            style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}
-          >
+          <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
             Email Address
           </label>
           <input
@@ -149,11 +154,8 @@ const Login = () => {
           />
         </div>
 
-        {/* Password */}
         <div style={{ marginBottom: '30px' }}>
-          <label
-            style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}
-          >
+          <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
             Password
           </label>
           <input
@@ -174,7 +176,6 @@ const Login = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           disabled={loading}
@@ -194,7 +195,6 @@ const Login = () => {
         </button>
       </form>
 
-      {/* Register Link */}
       <p style={{ textAlign: 'center', marginTop: '20px', color: '#666' }}>
         Don't have an account?{' '}
         <Link to="/register" style={{ color: '#007bff', textDecoration: 'none' }}>
